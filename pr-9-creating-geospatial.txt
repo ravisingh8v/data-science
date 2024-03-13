@@ -1,0 +1,76 @@
+Q.1 Crating Geospatial featuure maps in tableau using Geospatial Data.
+
+step 1: download  the dataset from here : https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2009/Real%20Estate.xlsx
+step 2: select that downloaded file in tableau from the menu icon and clicking on more
+
+step 3: now to use Map just drag and drop the logitude in the column and latitude in rows from the sidebar
+step 4: now from main menu go to map and select background Maps and then choose Dark Map from their we can configure map using
+
+step 5: Now again go to map and map layers now you can see pop-up 
+
+step 6: The Map Layers pane gives you options for selecting a background, setting washout, selecting 
+features to display, and setting a Data Layer. 
+
+step 7: You may also use the menu options Map | Background Maps | Manage Maps to change which map 
+service is used, allowing you to specify your own WMS server, a third party, or to use Mapbox maps. 
+
+
+##Using geospatial data
+We've seen that with any data source, Tableau supplies Latitude (generated) and Longitude 
+(generated) fields based on any fields it matches with its internal geographic database
+
+country, state, zip code, MSA, and congressional district are contained in Tableau's internal 
+geography. As Tableau continues to add geographic capabilities, you'll want to consult the 
+documentation to determine specifics on what the internal database contains. 
+However, you can also leverage specific geospatial data in your visualizations. We'll consider ways to 
+use data that enable geospatial visualizations, including the following: 
+Including Latitude and Longitude as values in your data. 
+Importing a .csv file containing definitions of Latitude and Longitude into Tableau's 
+database. 
+Leveraging Tableau's ability to connect to various spatial files or databases that natively 
+support spatial objects.
+
+###Including latitude and longitude in your data
+
+Including latitude and longitude in your data gives you a lot of flexibility in your visualizations (and 
+calculations). For example, while Tableau has built-in geocoding for countries, states, and zip codes, it 
+does not provide geocoding at an address level. Supplying latitude or longitude in your data gives you 
+the ability to precisely position marks on the map. 
+
+A map of houses for sale, sized by price 
+Here, each individual house could be mapped with a precise location and sized according to price. In 
+order to help the viewer visually, the Streets background has been applied. 
+If you are not able to add the fields directly to your data source, you might consider using crossdatabase joins or data blending. Another alternative is to import latitude and longitude definitions 
+directly into Tableau. We'll consider this option next. 
+Importing definitions into Tableau's geographic database
+In order to import from the menu, select Map | Geocoding | Import Custom Geocoding.... The import 
+dialog contains a link to documentation describing the option in further detail: 
+The Import Custom Geocoding dialog box By importing a set of definitions, you can 
+either: 
+Add new geographic types 
+
+
+Extend Tableau's built-in geographic types 
+Latitude and longitude define a single point. At times, you'll need to render shapes and lines with 
+more geospatial complexity. For that, you'll want to consider some of the geospatial functions and 
+spatial object support. 
+Leveraging spatial objects
+Spatial objects define geographic areas that can be as simple as a point and as complex as multi-sided 
+polygons. This allows you to render everything from custom trade areas to rivers, roads, and historic 
+boundaries of counties and countries. Spatial objects can be stored in spatial files and are supported 
+by some relational databases as well. 
+Tableau supports numerous spatial file formats, such as ESRI , MapInfo ,KML , GeoJSON , and 
+TopoJSON 
+
+Additionally, you may connect directly to ESRI databases as well as relational databases with 
+geospatial support, such as ESRI or SQL Server. If you create an extract, the spatial objects will be 
+included in the extract. 
+
+Many applications, such as Alteryx , Google Earth , and ArcGIS , can be used to generate 
+spatial files. Spatial files are also readily available for download from numerous organizations. This 
+gives you a lot of flexibility when it comes to geospatial analysis. 
+Here, for example, is a map of US railroads: 
+Map of US railroads 
+
+To replicate this example, download the shapefile from the United States' Census Bureau here: 
+https://catalog.data.gov/dataset/tiger-lineshapefile-2015-nation-u-s-rails-national-shapefile. 

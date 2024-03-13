@@ -1,0 +1,71 @@
+Q.1 Designing Tableau Dashboard for different displays and devices
+
+=>
+
+Step 1: Download the dataset from : https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2006/Superstore.csv
+step 2: Select the Dataset from the file by clicking more on data source
+Step 3: If selected dataset value is not showing in main area just double click on it
+step 4: Drag Department from the Pane to Filters and then right click on the department which you dropped in Filters
+step 5: now click show Filters
+step 6: Now double drag and drop Category into Rows
+step 7: and drop profit into columns
+step 8: you can add your filter which is you created on right side into output
+
+Now make create another sheet and do all of the above but for filter this time we use item
+
+step 9: You can see there is many items to look for on this dashboard you can limit the order to show only the top 10 least profitable
+step 10: for that we Have to now drop item in the filter shelf and when its shows the dialog box go to Top tab and there select by field and in that select bottom and then okay
+ 
+Now you can see top 10 least profitable items you can change title accordingly for dashboard
+
+Now Create another sheet by click on new worksheet bottom icon that displays a filled map of profit by state.
+
+step 1: Now double click on the state field in the data window and then dropping the profit on the Color shelf.
+step 2: click on map from above tab to edit our location to united state to see the color map because dataset represent the data of their.
+step 3: Now you can see colors by state nof profits in united state location
+step 4: Rename the sheet as Profit by State 
+
+Now Create one final sheet to show when profits were made or lost with same by click add worksheet.
+
+Step 1: Select Order date and drop on column and click on dropdown of that to ensure you set it Quarter and continuous (so it will reflect green).
+step 2: now drag and drop the profit in row
+step 3: Now add linear trend line, To do this first go to analytics tab and then drag and drop the Trend Line from model to the view or you can also right click on the view and click on trend line and click show
+step 4: Rename the Sheet to Profit Trend 
+
+Now We created the view that will make dashboard. lets start to put the dashboard
+
+
+Creating Dashboard
+
+Step 1: create Dashboard from bottom icon
+step 2: Rename the new Dashboard as "Is Least Profitable Always Unprofitable"
+step 3: At the bottom of the left side bar check on Show dashboard title
+Step 4: Add View to the Dashboard by drag and drop the all the view to the right by positioning like this:
+
+:- -----------------
+   -               -
+   -  1st  2nd  ft -
+   -            [] -
+   -  3rd  4t      -
+   -               -
+   -----------------
+Step 5: after adding view we have to set it properly too look good.
+step 6: Try to use the drop down menu of the depart ment menu it will only change the overall profit graph we can adjust that what we want to filter for now right click on filter and select apply to worksheets and then select all
+
+step 7: from the left sidebar drag drop the text object above overall profit by category and the followng
+        1. Select a Department from the drop-down
+        2. Select a category below
+        3. Select an Item below
+step 8: using the grip, move the department filter immediately above the top 10 least profitable items view.
+
+step 9: Align properly all the views
+step 10: now move the profit color below the profit by state view.
+step 11: now where you see dropdown just use their dropdown menu and go to fit and set enitre view.
+
+
+Now lets COme to the Different Display and devices
+
+step 1: you can the see devices at top of the Dashboard Tab on left sidebar
+step 2: click on device preview button (here you can view how your dashboard look like and diffrent device size also you set diffrent view)
+step 3: clicking on add layout button will add layout under the Dashboard tab on the left sidebar
+step 4: just adjust and make it perfect for the another device 

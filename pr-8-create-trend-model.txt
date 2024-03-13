@@ -1,0 +1,56 @@
+Q.1 Create a Trend model using data, Analyse-it and use it for forecasting.
+
+1. Trends
+
+step 1: download dataset from : https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2009/World%20Population.xlsx
+step 2: drag and drop the year in column
+step 3: drag and drop the Population (Population) in the row
+step 4: drop country name in color
+step 5: drop country name in filter by adding aufganistan and australia
+step 6: drop country name in text
+step 7: now in analytic double click on the trend line each trend line shows overall trend for the respective country
+
+Now you can see the trend of population for each country
+
+
+###Customized trend lines
+
+lets examine another example
+
+step 1: download  the dataset from here : https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2009/Real%20Estate.xlsx
+step 2: select the downloaded file in tableau and double click on listing
+
+now come to sheet 1
+
+step 3: drag and drop Size(sqtFt) in Columns
+step 4: drag and drop Price in Rows
+step 5: drag type of sale into color
+step 6: double click on Address
+
+now for trend line 
+
+step 7: go to analytic and drag and drop trend line in view
+step 8: right click on trend line to edit configuration
+
+
+###Analyzing Trend Lines
+it can helpful to observe trend lines, but often we want to understand whether the trend model we've selected is statistically meaningful.
+
+- we can analyze the line by hover on it
+- additionally, we can see more detail on Analysis | trend lines | describe model
+
+
+#Exporting statistical model details
+
+For exporting 
+
+- go to worksheet which is on main menu
+- go to export 
+- click on Data
+- then choose the file path
+- click export
+
+
+2. Use same for the Forecasting
+- Create same view as we created in Population
+- Just remove the trend line and instead of that add forecast from the analytics

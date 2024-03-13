@@ -1,0 +1,65 @@
+Q.1 Perform calculation and creating parameter in tableau
+Ans:
+A calculation is often referred to as a Calculated Field in Tableau because, in most cases, when you 
+create a calculation, it will show up as either a new measure or dimension in the data pane. 
+
+Two main type of calculation :
+- Row-level calculations: These calculations are performed for every row of underlying data. 
+- Aggregate calculations: These calculations are performed at an aggregate level, which is usually 
+  defined by the dimensions used in the view. 
+
+Creating and Editing Calculations
+
+Dataset: https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2004/Vacation%20Rentals.csv
+
+step 1: Download data source and and in tableau click connect to data and click on more and choose the downloaded file
+step 2: now go to sheet 1 tab and click on dropdown icon which is show below Data and analytics tab or right click any where in plane area that will show the same options
+
+1. Row Level Calculations
+
+step 1: create new Calculation and give name as FullName and below you in text area you can see one small arrow click on that and select field or write manually
+=> [First] + " "+[Last]
+step 2: after clicking ok now you can see that this new calculation is showing in data pane
+step 3: 
+
+
+
+2. Aggregate Calculations
+It can be use to create additional calculation for adding value or playing with number like creating calculation for Discount
+
+Step 1:lets create one Discount Calculation by creating new Calculation
+Step 2: write title as Discount % and in below area write:-
+=> SUM([Discount])/SUM([Rent]) 
+step 3: click ok
+step 4: As we want that discount showing number in % so right click on Discount % and select Default Property > Number Format > Select Percentage
+step 5: You can select any decimal number you want to see after Percentage
+
+
+Steps 6: Now lets Place Building Room (Rental Property), FullName, Start, end on Rows. 
+step 7: In Column place Rent, Discount and Discount %
+Step 8: Rearrange the filed as in the last first come Rent then Discount and then Discount %
+
+Output:***
+
+
+
+3. Parameters
+A parameter in Tableau is a placeholder for a single, global value such as a number, date, or string. 
+
+Creating Parameters
+
+Step 1: As we have created Calculation here also we need to create parameter in same manner by right clicking on plan area or with dropdown
+step 2: After Click on create parameter you can see one dialog interface
+step 3: Here you can set name as Select an Option 
+step 4: Data type: float
+Step 5: Current value: First Option, Value when workbook open: Current value, Display format: Automatic, Allowable values: List
+step 6: as we select List so we have to set type fixed or anything else here we choose fixed and give ouw list to them like this
+- value  Display As
+    1       First Option
+    2       Second Option
+    3       Third Option
+
+step 7: click ok, Now you can see our created parameter below left side.
+Step 8: to reveal option of parameters just right click on parameter and click show meter you can see drop-down on right side
+
+We successfully created Parameter

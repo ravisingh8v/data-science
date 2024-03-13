@@ -1,0 +1,34 @@
+Q.1 Connecting and extracting with various data resources in tableau
+
+Ans: 
+
+1. Connecting to Data in a file
+- File based data includes all sources of data where the data is stored in a file.
+
+Here we use this Superstore Dataset:- https://github.com/PacktPublishing/Learning-Tableu-2020/blob/master/Chapter%2002/Superstore.xlsx
+
+Step 1: Open tableau desktop
+Step 2: From the App icon (Menu) Select Data | new Data source and select microsoft excel from the list of possible connection.
+step 3: In the open dialogue choose our excel file that we downloaded (Dataset)
+step 4: Now you are on Data source and you can see two sheet of document in the left double click both one by one to select them.
+step 5: It might prompt you Edit Relationship dialog. for now just accept the default by closing dialog.
+step 6: Click the data source name to edit it and make it "Orders and Returns"
+step 7: Now go to Connect to Excel or sheet 1 which below next of data source
+step 8: There in left side you can see many data you can create any type of visualize data here we are going to create a time series by dragging "Return (Count)" to column and "return reason" to row
+step 9: Now you can see the output below:-
+
+
+2. Using Extracts
+
+By using extract you can copy all the sheets and connection into new hyper file
+
+- Any data source that is using an extract wil have a distinctive icon that indicates the data has been extracted from the source and you can see that icon in "Connect sheet" or "sheet 1" below the "Analytics" menu
+
+step 1: go to data source and click on extract or live and then configure the setting for live or extract if any
+step 2: now go to "connect sheet (sheet1)"
+step 3: Right click on that icon which shown below the "analytics" and select extract data.
+step 4: now you can see some sort of configuration click extract
+step 5: now your data is on extract mode.
+
+you can see by going to to data source
+  
