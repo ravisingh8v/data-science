@@ -1,0 +1,90 @@
+Q.1 Create dashboard and story telling using tableau
+
+A regional dashboard
+
+Step 1: Download dataset:- https://github.com/PacktPublishing/Learning-Tableau-2020/blob/master/Chapter%2008/Chapter%2008/20Starter.twbx
+
+give sheet name as Region Scorecard
+
+Step 2: Create Calculation now give name Profit Ratio
+Step 3: In blank area write this : SUM([Profit])/SUM([Sales]
+Step 4: Create another calculation named KPI - Profit Ratio
+Step 5: now in blank area on that pop up write this
+
+IF [Profit Ratio] >= [Profit Ratio KPI Target]
+THEN "Acceptable"
+ELSE "Poor"
+END
+
+step 6: Now Drag and drop the Region on Rows and Order Date in columns
+step 7: Now Drag and drop the calculation that we have created KPI - Profit Ratio on Color and Shape both 
+step 8: Add column for grand total using the Analytics pane and format the grand total with a custom label overall with bold font and light gray shading 
+Step 9: Add order date as filter by dragging and dropping and set it to the top 6 by field (order date as min).
+
+
+
+step 10: create another sheet named Profit Ratio by Region.
+
+
+step 11: now use drop down menu on Region to select Geographic Role | Create from... | State.
+
+step 12: Now double click on region and also drag and drop region on text and then drag and drop the profit ratio on text and color
+
+step 13: Rearrange the fields in the Marks Area as First come color profit and then text region and then profit ratio text and then now detail region
+
+step 14: Now apply same filter as we applied in above sheet
+
+step 15: once both created now create new Dashboard named Profit Ratio KPI and arrange them in proper manner
+
+first the map and second the Region Scorecard.
+
+
+
+Stories 
+
+this feature allows you to tell story using interactive snapshots of dashboard and view. the snapshots become points in a story. this allows you to construct a guided narrative or even an entire presentation.
+
+Let's consider an example in which story points might be useful. The executive managers are pleased 
+with the Regional Scorecard dashboard you developed previously. Now, they want you to make a 
+presentation to the board and highlight some specific issues for the South region. With minimal effort, 
+you can take your simple scorecard, add a few additional views, and tell an entire story:
+
+
+step 1: first let's build couple of more views
+step 2: create sheet named Profit Ratio KPI by State
+step 3: drop KPI - Profit Ratio on Color and then drop sale in details
+
+
+step 4: create one more sheet named Profit Ratio by Quarter
+Step 5: use order date as continuous date value on columns and profit ratio on Rows.
+step 6: set the marks type to bar instead of lines
+step 7: add reference line for the Profit Ratio KPI Target Parameters value for that you can right click on the Profit Ratio and click on Add reference Line
+step 8: Add KPI - Profit Ratio to color also click on color shelf and add border
+step 9: now go ahead filter the view to the south region and use the drop-down menu to apply that filter  to the Profit Ratio KPI by State view as well:
+
+Step 10: now create dashboard and add both of them which we recently created one after another.
+
+step 11: put all the filter and color thing in the last line of the dashboard right side
+
+step 12: create a new story by selecting story | new story from the menu
+
+step 13: Give the story title as South Region Analysis
+
+step 14: Add the Regional Scorecard dashboard as the first story point and select the south region on the map. give the story point the following text : The South Region has not Performed well the last 6 months:
+step 15: click the new blank point button and add the profit ratio analysis dashboard to the point
+step 16: give this story point the title Only one state has met the 15% Target overall.
+step 17: Right click Virginia on the map and select Annotate| Mark..keep the state and profit ratio as part of the annotations
+step 18: Click the Duplicate button to copy the current story point. Give this new story point a caption 
+of 3 states would meet a goal of 10%. Set Profit Ratio KPI Target to 10.00% and update the 
+point.
+
+step 19: Click the Duplicate button again and give the newly created point a caption of Certain states 
+have performed well historically.
+step 20: Right-click the annotation for Virginia, select Remove to delete it, and then add a similar 
+annotation for Louisiana. Then, click Louisiana to select that state
+
+step 21: Make sure to click the Update button to capture the state of the dashboard.
+
+
+here we create this story point highlights quarterly results for single state.
+
